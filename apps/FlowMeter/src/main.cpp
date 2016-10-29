@@ -1,8 +1,11 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <pgmspace.h>
-//#include <RtcDS3231.h>
-//#include <RTCsync.h>
+#include "FlowMeter.h"
+#include <RtcDS3231.h>
+
+RtcDS3231 Rtc;
+FlowMeter fm;
 
 void setup()
   {
