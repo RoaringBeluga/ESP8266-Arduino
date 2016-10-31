@@ -16,6 +16,11 @@ FlowMeter::FlowMeter()
 
 }
 
+void FlowMeter::start()
+{
+
+}
+
 void FlowMeter::setPin(uint16_t pin)
 {
   pinNumber = pin;
