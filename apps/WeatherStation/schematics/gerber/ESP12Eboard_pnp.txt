@@ -1,0 +1,25 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=ESP12Eboard
+*Date=01:20:28
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;molex-1x3_lock;4.72888;-6.00248;0;Bottom;D5
+2;;THT;8.53888;-56.6755;-90;Bottom;LCD
+3;;THT;13.6189;-10.9555;90;Bottom;GPIO
+4;;THT;26.3189;-51.5955;-90;Bottom;I2C2
+5;;THT;26.3189;-56.6755;-90;Bottom;I2C1
+6;;THT;8.53888;-49.0555;-90;Bottom;RTC
+7;;;13.2917;-27.4655;-90;Bottom;ANT
+8;;THT;26.3189;-46.5155;-90;Bottom;I2C3
+9;;molex-1x3_lock;22.5089;-6.00248;0;Bottom;D7
+10;;molex-1x3_lock;13.6189;-6.00248;-1.27222e-14;Bottom;D6

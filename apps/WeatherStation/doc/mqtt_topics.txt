@@ -1,0 +1,37 @@
+Topic root:
+
+    bus/
+
+LWT announce topic:
+    bus/lwt
+
+LWT format:
+
+    {node:"<node>", msg:"<message>"} or
+    Down:<node>.
+
+Subtrees for sensors, actuators, relays etc:
+
+    bus/sensors
+    bus/controllers
+    bus/...
+
+Sensor topics:
+
+    1. Sensor data in JSON format:
+          bus/sensors/<category>/<node>/<type>
+    2. Telemetry reports from sensors:
+          bus/sensors/<category>/<node>/telemetry
+    3. Send commands for the nodes here:
+          bus/sensors/<category>/<node>/control
+
+Sensor categories:
+
+    1. ambient  – air temperature/humidity/pressure, light levels etc
+    2. utility  – water flow meters, water pressure sensors, energy meters, ...
+    3. plant    – plant-related such as soil humidity, pH etc
+    4. ???
+
+Controller topics:
+
+    TBA
