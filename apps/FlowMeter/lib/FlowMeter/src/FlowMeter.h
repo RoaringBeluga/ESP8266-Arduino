@@ -1,14 +1,14 @@
 #ifndef DSU_FLOWMETER_H
 #define DSU_FLOWMETER_H
-#endif
 
+#include "Config.h"
 #include <Arduino.h>
 
 class FlowMeter
 {
 protected:
-  uint16_t  ticksPerLitre = 0; // Number of pulses sent by sensor per 1 litre flow
-  uint8_t   pinNumber = 14; // GPIO pin number
+  uint16_t  ticksPerLitre = TICKS_PER_LITRE; // Number of pulses sent by sensor per 1 litre flow
+  uint8_t   pinNumber = PIN_METER; // GPIO pin number
 
   uint16_t  ticksCurrent = 0; // Number of pulses recorded since last full litre
   uint16_t  litresCurrent = 0; // Number of liters
@@ -36,3 +36,5 @@ public:
   void incTick(); // Incrementing the tick counter. Intended to be used as callback
 
 };
+
+#endif

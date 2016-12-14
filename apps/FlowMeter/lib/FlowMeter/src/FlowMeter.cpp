@@ -63,7 +63,7 @@ uint16_t FlowMeter::getFlowL()
 
 float FlowMeter::getLitres()
 {
-  return litresCurrent+((1000/ticksPerLitre)*ticksCurrent);
+  return litresCurrent+(ticksCurrent/ticksPerLitre);
 }
 
 void FlowMeter::incTick()
