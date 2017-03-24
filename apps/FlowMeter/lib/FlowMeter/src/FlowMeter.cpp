@@ -71,6 +71,14 @@ void FlowMeter::incTick()
   if((ticksCurrent++)>ticksPerLitre)
   {
     litresCurrent++;
+    litresIncrement++;
     ticksCurrent = 0;
   }
+}
+
+uint16_t FlowMeter::litresIncremented()
+{
+  uint16_t i = litresIncrement;
+  litresIncrement=0;
+  return i;
 }

@@ -4,8 +4,8 @@
 #define DSU_CONFIG_H
 #endif
 
-#define NET_SSID      "ChinaNet-M5Pc"
-#define NET_PASSWD    "upkjbdk7"
+#define NET_SSID      "Pepperland"
+#define NET_PASSWD    "DEAD00DEAF00FACE00DECADE00"
 #define NET_RETRIES   10
 
 #define MQTT_SERVER   IPAddress(192,168,1,4) //F("")

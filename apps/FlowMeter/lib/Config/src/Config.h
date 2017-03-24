@@ -1,3 +1,19 @@
+/*
+      _ _
+    /  V \
+  /       \
+1 Blue    Gray  3
+ |        |
+2 Brown   Black 4
+  \      /
+   \___/
+
+1: Blue   – VCC
+2: Yellow – SCL
+3: Black  – Gnd
+4: Green  – SDA
+*/
+
 #include <Arduino.h>
 
 #ifndef DSU_CONFIG_H
@@ -8,7 +24,7 @@
 #define NET_PASSWD    "upkjbdk7"
 #define NET_RETRIES   10
 
-#define MQTT_SERVER   IPAddress(192,168,1,4) //F("")
+/* #define MQTT_SERVER   IPAddress(192,168,1,4) //F("")
 #define MQTT_USER "desman"
 #define MQTT_PASSWD "1234"
 
@@ -45,7 +61,7 @@ const char* MQTT_TOPICS[6] = {
 #define NODE_ERR_HW   0xF1
 #define NODE_ERR_CMD  0xF0
 #define NODE_RESTART  0xFF
-
+*/
 #define NTP_SERVER "time.asia.apple.com"
 
 #define PIN_METER     14
@@ -58,5 +74,16 @@ const uint16_t cart2_ResL = 4000;
 const uint16_t cart3_ResL = 10000;
 
 const uint16_t cartWarn = 100;
+
+const uint16_t  addrTicks   = 0x00;
+const uint16_t  addrLitres  = 0x02;
+const uint16_t  addrResCL   = 0x04;
+const uint16_t  addrResCM   = 0x06;
+const uint16_t  addrResCR   = 0x08;
+
+const uint16_t  btnOK_NONE  = 0x00;
+const uint16_t  btnOK_L     = 0x001;
+const uint16_t  btnOK_M     = 0x002;
+const uint16_t  btnOK_R     = 0x003;
 
 #endif

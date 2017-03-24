@@ -4,6 +4,7 @@
 #include <Wire.h>
 #include <LiquidCrystal_PCF8574.h>
 
+
 void btnOKInterrupt(void);
 void btnSelInterrupt(void);
 void meterPinIterrupt(void);
@@ -23,7 +24,7 @@ void setup()
   while(!Serial) {} // Wait
 
   WiFi.begin(NET_SSID, NET_PASSWD);
-  WiFi.config(IPAddress(192,168,1,10),IPAddress(192,168,1,1),IPAddress(255,255,255,0),IPAddress(8,8,8,8),IPAddress(8,8,4,4));
+  WiFi.config(IPAddress(192,168,10,111),IPAddress(192,168,10,1),IPAddress(255,255,255,0),IPAddress(8,8,8,8),IPAddress(8,8,4,4));
   i = -1; lcd.setCursor(0,1); lcd.print("Net:");
   while ((WiFi.status() != WL_CONNECTED) && i++<NET_RETRIES){
     delay(500);Serial.print(".");

@@ -13,6 +13,8 @@ protected:
   uint16_t  ticksCurrent = 0; // Number of pulses recorded since last full litre
   uint16_t  litresCurrent = 0; // Number of liters
 
+  uint16_t  litresIncrement = 0;
+
 public:
   FlowMeter(uint16_t, uint16_t); // (pin, ticksPerLitre)
   FlowMeter(uint16_t); // (pin)
@@ -34,6 +36,8 @@ public:
   float getLitres(); // get litres and ml
 
   void incTick(); // Incrementing the tick counter. Intended to be used as callback
+
+  uint16_t litresIncremented(); // Check whether the litres counter was incremented. Returns number and resets the counter.
 
 };
 
